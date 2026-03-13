@@ -108,8 +108,8 @@ async def on_ready():
 @bot.command()
 async def dicehelp(ctx):
    message=("I can teach you everything, the available commands are:"
-   "\n roll <number 1-10> <d4,d6,d8,d10,d12,d20,d100> : to roll a dice of the specified type"
-   "\n name <number 1-10> : to generate fake names"
+    "\n roll <number 1-10> <d4,d6,d8,d10,d12,d20,d100> : to roll a dice of the specified type"
+    "\n name <number 1-10> : to generate fake names"
     "\n play <song name or url> : to play a song in your voice channel (sadly not really fast yet)"
     "\n skip : to skip the current song"
     "\n stop : to stop the music and leave the voice channel"
@@ -188,5 +188,6 @@ async def roll(ctx, y: int, arg):
             await ctx.send(x)   
         else:
             await ctx.send("the command <$roll> accepts only dice's formats like d20 or d4")
+
 
 bot.run(BOT_TOKEN)
